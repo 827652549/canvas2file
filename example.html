@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            box-sizing: border-box;
+            border: 1px dotted black;
+        }
+
+        img {
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<p>This is canvas</p>
+<canvas id="canvas" width="200" height="100"></canvas>
+<p>This is img</p>
+<div id="box"></div>
+<!--引入canvas2img的js库-->
+<script src="canvas2img.js"></script>
+
+<script>
+    let canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+
+    context.fillStyle = 'black';
+    context.strokeStyle = 'red';
+    context.lineWidth = 1;
+    context.rect(10, 10, 50, 50);
+    context.fill();
+    context.stroke();
+    context.font = '22px palatino';
+    context.fillText('<canvas/>', 70, 70);
+    context.beginPath();
+
+    Canvas2Img.insertImg('canvas', 'box');
+    Canvas2Img.download('canvas', 'image-name');
+</script>
+</body>
+</html>
