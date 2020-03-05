@@ -1,0 +1,25 @@
+{
+  "name": "canvas2file",
+  "version": "1.0.1",
+  "description": "a lib for saving or converting `<canvas>` as file like`<img>`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/827652549/canvas2file.git"
+  },
+  "keywords": [
+    "canvas",
+    "img",
+    "image",
+    "file"
+  ],
+  "author": "苏一恒",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/827652549/canvas2file/issues"
+  },
+  "homepage": "https://github.com/827652549/canvas2file#readme"
+}
