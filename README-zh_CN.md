@@ -12,6 +12,8 @@
 ## 使用说明
 当引入`canvas2file.js`的时候，你就能愉快地使用`Canvas2File`对象了。
 
+[查看演示](https://827652549.github.io/canvas2file/example.html)
+
 Example:
 ```javascript
 Canvas2File.insertImg('canvas','box');
