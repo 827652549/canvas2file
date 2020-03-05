@@ -1,7 +1,7 @@
 {
   "name": "canvas2file",
   "version": "1.0.2",
-  "description": "a lib for saving or converting &lt;canvas&gt; as file like &lt;img&gt;",
+  "description": "A lib for saving or converting canvas as file like img.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
