@@ -3,7 +3,15 @@
 
 将`<canvas>`转化为`<img>`的Javascript库，轻而易举地转化和下载。
 
-## 安装canvas2file
+## 快速开始
+#### npm引入
+```shell script
+npm i canvas2file
+```
+```javascript
+import Canvas2File from 'canvas2file';
+````
+#### 直接引入
 1. 在body下引入`canvas2file.js`。
 ```html
 <script src="canvas2file.js"></script>
