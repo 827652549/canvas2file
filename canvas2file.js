@@ -44,6 +44,7 @@ function _downloadFileByBlob(blob, filename) {
     document.body.removeChild(eleLink);
 }
 
+//可直接引入该文件，也可作为npm包被import引入
 if (typeof module != 'undefined'){
     module.exports = Canvas2File;
 }
