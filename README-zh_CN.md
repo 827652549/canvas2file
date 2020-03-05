@@ -1,24 +1,33 @@
-# 🎨canvas2img
+# 🎨canvas2file
 语言：[English](./README.MD)
 
-将`<canvas>`转化为`<img>`的Javascript库,轻而易举地转化和下载。
+将`<canvas>`转化为`<img>`的Javascript库，轻而易举地转化和下载。
 
-## 安装canvas2img
-1. 在body下引入`canvas2img.js`。
+## 安装canvas2file
+1. 在body下引入`canvas2file.js`。
 ```html
-<script src="canvas2img.js"></script>
+<script src="canvas2file.js"></script>
 ```
-2. 将你的JavaScript代码插入到canvas2img.js之下，以确保你在你的js文件内`Canvas2Img`能被正确地识别。
+2. 将你的JavaScript代码插入到canvas2file.js之下，以确保你在你的js文件内`Canvas2File`能被正确地识别。
 ## 使用说明
-当引入`canvas2img.js`的时候，你就能愉快地使用`Canvas2Img`对象了。
+当引入`canvas2file.js`的时候，你就能愉快地使用`Canvas2File`对象了。
+
+Example:
+```javascript
+Canvas2File.insertImg('canvas','box');
+Canvas2File.insertImg('canvas','box',1);
+Canvas2File.download('canvas');
+Canvas2File.download('canvas','imageName');
+Canvas2File.download('canvas','imageName','image/jpeg');
+```
 
 |方法名|简介|
 |:--|:--|
-|insertImg(canvasId,elementId,quality)|转化为`<img>`并插入到指定结点中|
-|download(canvasId,fileName,type)|以图片格式下载`<canvas>`|
+|insertImg(canvasId,elementId,quality)|转化为`<img>`并插入到指定结点中。|
+|download(canvasId,fileName,type)|以图片格式下载`<canvas>`。|
 
 ### insertImg(canvasId,elementId,quality) 
-将`<canvas/>`转化为`<img/>`插入到指定结点中
+将`<canvas/>`转化为`<img/>`插入到指定结点中。
 **参数**
 
 - canvasId
@@ -29,7 +38,7 @@
 > 图片质量，仅供在'image/jpeg'类型时使用
 
 ### download(canvasId,fileName,type)
-将`<canvas/>`转化为img下载到本地
+将`<canvas/>`转化为img下载到本地。
 
 **参数**
 
@@ -40,19 +49,9 @@
 - type (可选)
 > 图片类型。默认`image/png`,可选`image/jpeg`|`image/webp`(webp仅在谷歌浏览器可使用)
 
-Example:
-```javascript
-Canvas2Img.insertImg('canvas','box');
-Canvas2Img.insertImg('canvas','box',1);
-Canvas2Img.download('canvas');
-Canvas2Img.download('canvas','imageName');
-Canvas2Img.download('canvas','imageName','image/jpeg');
-```
-
 ## 参与共建
 
 希望你也能参与到这个js库的建设中，欢迎你的加入。
 
-
-
-
+## License
+MIT

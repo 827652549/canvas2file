@@ -20,8 +20,8 @@
 <canvas id="canvas" width="200" height="100"></canvas>
 <p>This is img</p>
 <div id="box"></div>
-<!--引入canvas2img的js库-->
-<script src="canvas2img.js"></script>
+<!--引入canvas2file的js库-->
+<script src="canvas2file.js"></script>
 
 <script>
     let canvas = document.getElementById('canvas'),
@@ -37,8 +37,8 @@
     context.fillText('<canvas/>', 70, 70);
     context.beginPath();
 
-    Canvas2Img.insertImg('canvas', 'box');
-    Canvas2Img.download('canvas', 'image-name');
+    Canvas2File.insertImg('canvas', 'box');
+    Canvas2File.download('canvas', 'image-name');
 </script>
 </body>
 </html>

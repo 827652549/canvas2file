@@ -1,4 +1,4 @@
-let Canvas2Img={
+let Canvas2File={
     /**
      * 将canvas转化为img标签插入到插入到节点之中
      * @param canvasId canvas的id
