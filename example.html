@@ -2,24 +2,28 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>canvas2img demo</title>
     <style>
-        canvas {
+        canvas,img{
             box-sizing: border-box;
             border: 1px dotted black;
         }
 
-        img {
-            box-sizing: border-box;
-            border: 1px solid black;
+        #main>*{
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-<p>This is canvas</p>
-<canvas id="canvas" width="200" height="100"></canvas>
-<p>This is img</p>
-<div id="box"></div>
+<div id="main">
+    <p>This is canvas</p>
+    <canvas id="canvas" width="200" height="100"></canvas>
+    <p>This is img</p>
+    <div id="box"></div>
+
+    <button id="download">点击下载canvas</button>
+</div>
+
 <!--引入canvas2file的js库-->
 <script src="canvas2file.js"></script>
 
@@ -38,7 +42,11 @@
     context.beginPath();
 
     Canvas2File.insertImg('canvas', 'box');
-    Canvas2File.download('canvas', 'image-name');
+
+    document.getElementById('download').addEventListener('click',() => {
+        Canvas2File.download('canvas', '自定义命名');
+    });
+
 </script>
 </body>
 </html>
