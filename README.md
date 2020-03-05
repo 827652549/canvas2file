@@ -1,5 +1,5 @@
 # 🎨canvas2file
-语言：[English](./README.MD)
+语言：[English](./README-en.MD)
 
 将`<canvas>`转化为`<img>`的Javascript库，轻而易举地转化和下载。
 

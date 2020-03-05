@@ -43,3 +43,7 @@ function _downloadFileByBlob(blob, filename) {
     // remove the clicker
     document.body.removeChild(eleLink);
 }
+
+if (typeof module != 'undefined'){
+    module.exports = Canvas2File;
+}
