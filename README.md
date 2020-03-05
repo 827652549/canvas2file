@@ -16,13 +16,13 @@ import Canvas2File from 'canvas2file';
 
 #### 直接引入
 
-1. 在body下引入`canvas2file.js`。
+1⃣️  在body下引入`canvas2file.js`。
 
 ```html
 <script src="canvas2file.js"></script>
 ```
 
-2. 将你的JavaScript代码插入到canvas2file.js之下，以确保你在你的js文件内`Canvas2File`能被正确地识别。
+2⃣️ 将你的JavaScript代码插入到canvas2file.js之下，以确保你在你的js文件内`Canvas2File`能被正确地识别。
 
 ## 使用说明
 
