@@ -1,6 +1,6 @@
 {
   "name": "canvas2file",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a lib for saving or converting `<canvas>` as file like`<img>`",
   "main": "index.js",
   "scripts": {
