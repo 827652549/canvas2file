@@ -79,7 +79,16 @@ Canvas2File.download('canvas','imageName','image/jpeg');
 
 - type (可选)
 
-> 图片类型。默认`image/png`,可选`image/jpeg`|`image/webp`(webp仅在谷歌浏览器可使用)
+> 图片类型。默认`image/png`,可选`image/jpeg`、`image/webp`(webp仅在谷歌浏览器可使用)
+
+### 常见问题
+##### **1、为什么导出的jpeg格式的图片背景是黑色？**
+
+如果你需要导出jpeg格式的图片，请在canvas绘制之初将背景色填充成白色，否则jpeg格式的图片背景色会变成黑色。
+```javascript
+    context.fillStyle = 'white';
+    context.fillRect(0,0,ctx.canvas.width,ctx.canvas.height);
+```
 
 
 ## 参与共建
