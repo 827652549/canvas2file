@@ -2,7 +2,7 @@
 Language：[简体中文](./README.md)
 
 
-A lib for saving or converting canvas as file like img.。
+A lib for saving or converting canvas as file like img.
 
 ## Quick start
 #### npm
@@ -50,7 +50,7 @@ Canvas2File.download('canvas','imageName','image/jpeg');
 
 Convert `<canvas />` into `<img />` and insert it into the specified node.
 
-**参数**
+**parameter**
 
 - canvasId
 
@@ -68,17 +68,17 @@ Convert `<canvas />` into `<img />` and insert it into the specified node.
 
 Convert `<canvas />` to img and download to local.
 
-**参数**
+**parameter**
 
 - canvasId
 
 > The id of the canvas being used
 
-- fileName (可选)
+- fileName (optional)
 
 > Download to local to image file. The default name is `image.png`
 
-- type (可选)
+- type (optional)
 
 > Picture type. The default `image / png`, optional` image / jpeg`, `image / webp` (webp is only available in Google Chrome)
 
@@ -97,6 +97,7 @@ If you need to export a picture in jpeg format, please fill the background color
 
 I hope you can also participate in the construction of this js library , welcome you!
 
+And…… This is my first English README. If the statement is not clear, please help me correct it, thank you.
 ## License
 
 MIT
